@@ -21,7 +21,7 @@ export default function Home() {
         <PostOwnner name = "Natrada Nuchit" studentId = "660610757" postText = "Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207" postLike = "100"/>
 
         {/* Comment Example */}
-        {comments.map((comment : ReplyProps)=><Comment {...comment}/>)}
+        {comments.map((comment : ReplyProps)=><Comment {...comment} key = {comment.userImagePath}/>)}
 
         {/* Reply Example */}
         

@@ -33,7 +33,7 @@ export default function Comment({
             </div>}
           </div>
       </div>
-      {replies.map((replies : ReplyReplyProps)=><Reply {...replies}/>)}
+      {replies.map((replies : ReplyReplyProps)=><Reply {...replies} key = {replies.userImagePath}/>)}
 
     </div>
     
